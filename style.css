@@ -5678,3 +5678,28 @@ p.form-messege {
     /* Ajustez cette valeur pour spécifier la distance du bas */
     z-index: 2;
 }
+
+.mobiletcustomheader {
+    display: none;
+}
+
+@media screen and (max-width: 960px) {
+    .computertemplateheader {
+        display: none;
+    }
+
+    .mobiletcustomheader {
+        display: block;
+    }
+
+    .textBanniereCustomize {
+        font-size: 28px !important;
+        text-align: left !important;
+    }
+
+    .mobilelogo {
+        width: 80px !important;
+    }
+
+
+}
