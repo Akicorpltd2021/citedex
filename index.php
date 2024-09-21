@@ -16,6 +16,8 @@
   <link rel="stylesheet" type="text/css" href="assets/css/plugin_theme_css.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
   <!-- modernizr js -->
   <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -28,11 +30,45 @@
 
   <div class="banniereCustomize">
     <div class="banniereImgCustomize"></div>
-    <h1 class="txbdstitle hlight textBanniereCustomize">
-      Espace indépendant de réflexions, rencontres et informations dans les domaines anthropocentriques <span id="typeWriter"></span> <span id="enEcriture">|</span>
-    </h1>
+    <div class="centerBoxBan">
+      <h1 class="txbdstitle hlight textBanniereCustomize" id="enEcriture">
+        <span id="typeWriter"></span>
+      </h1>
+      <h2 class="pictoTitleFirst">Quel citoyen êtes vous ?</h2>
+      <div class="pictoGrammeBox">
+        <a href="citoyen.php?id=1" class="pictoCard">
+          <h3 class="pictoTitle">Démocratie et politique</h3>
+          <img src="assets/images/vote_action.png" class="pictoIcone" alt="Cité d'Ex">
+        </a>
+        <a href="citoyen.php?id=1" class="pictoCard">
+          <h3 class="pictoTitle">Engagement citoyen</h3>
+          <img src="assets/images/citoyennete.png" class="pictoIcone" alt="Cité d'Ex">
+        </a>
+        <a href="citoyen.php?id=1" class="pictoCard">
+          <h3 class="pictoTitle">Environnement et developpement durable</h3>
+          <img src="assets/images/environnement.png" class="pictoIcone" alt="Cité d'Ex">
+        </a>
+        <a href="citoyen.php?id=1" class="pictoCard">
+          <h3 class="pictoTitle">Santé et bien-être</h3>
+          <img src="assets/images/sante.png" class="pictoIcone" alt="Cité d'Ex">
+        </a>
+        <a href="citoyen.php?id=1" class="pictoCard">
+          <h3 class="pictoTitle">Economie locale et tradition</h3>
+          <img src="assets/images/economie.png" class="pictoIcone" alt="Cité d'Ex">
+        </a>
+        <a href="citoyen.php?id=1" class="pictoCard">
+          <h3 class="pictoTitle">Signalements et entraides</h3>
+          <img src="assets/images/entraide.png" class="pictoIcone" alt="Cité d'Ex">
+        </a>
+
+      </div>
+    </div>
+    <!--
+   
+-->
+
     <div class="adhererCustomize">
-      <a href="#" class="linkbutton" style="padding: 14px 60px;">Adhérer</a>
+      <a href="#register" class="linkbutton scroll-link" style="padding: 14px 60px;">Adhérer</a>
     </div>
   </div>
   <!-- slider -->
@@ -67,11 +103,17 @@
                   Bienvenue chez<br /> « CITE-D’EX ».
                 </h2>
                 <p>
-                  Un think tank dynamique et engagé fondé par des citoyens partageant une vision commune. Nous sommes une association girondine régie par la loi du 1er juillet 1901, nous sommes bien plus qu'un simple cercle de réflexions – nous sommes une force collective dédiée à l'épanouissement sociétal.
-                  <br>
-                  <br>
-                  Notre mission est claire : placer l'homme au centre des initiatives, catalyser le changement positif et œuvrer pour l'intérêt général. Nous nous engageons dans une variété d'actions, de l'éveil à l'environnement au soutien des entreprises locales, de l'initiation des jeunes au civisme à la recherche de solutions politiques novatrices.
+                  Espace indépendant de réflexions, rencontres et informations dans les domaines anthropocentriques Espace indépendant de réflexions, rencontres et informations dans les domaines anthropocentriques “l’homme au centre de l’univers” pour agir dans un intérêt général. <!-- <span id="typeWriter"></span> <span id="enEcriture">|</span>-->
                 </p>
+                <h2 class="txbdsvtitle hlight" style="margin-top: 10px;">Nos valeurs :</h2>
+                <ul class="listeValeurs">
+                  <li>Innovation citoyenne</li>
+                  <li>Espace d'expression et reflexions inspirantes</li>
+                  <li>Engagement collaboratif</li>
+                  <li>Eco-citoyenneté active</li>
+                  <li>Rassemblement citoyen positif</li>
+                  <li>Entraide</li>
+                </ul>
               </div>
             </div>
             <div class="ab_midd_img">
@@ -81,7 +123,7 @@
                     <img src="assets/images/Co_about2.png" alt="image">
                   </div>
                   <div class="txbdcon sp-txbdsvfdrl txbdsvflextlr">
-                    <h2 class="txbdsvtitle hlight">+ <span id="counterVolontaire">0</span> Volontaires <!-- &amp; Growing--></h2>
+                    <h2 class="txbdsvtitle hlight">+ <span id="counterVolontaire">0</span> Adhérents <!-- &amp; Growing--></h2>
                     <div class="txbdsvbtn txbdbtnicon">
                     </div>
                   </div>
@@ -91,7 +133,7 @@
             <div class="witr_button_area">
               <div class="witr_btn_style mr">
                 <div class="witr_btn_sinner">
-                  <a href="#" class="witr_btn">Nous découvrir</a>
+                  <a href="a-propos.php" class="witr_btn">Nous découvrir</a>
                 </div>
               </div>
             </div>
@@ -101,239 +143,11 @@
     </div>
   </div>
 
-  <div class="cr_chose_area">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 witr_all_pd0">
-          <div class="chose_left_img">
-            <div class="row">
-              <div class="col-lg-6 witr_all_pd0">
-                <div class="txbdsva allcostyle boxsh boxpsv txbdmb30 text-left sselect chos_img1">
-                  <div class="txbdsi">
-                    <div class="imageicon">
-                      <img src="assets/images/engagement.png" alt="image">
-                    </div>
-                    <div class="txbdcon">
-                      <h2 class="txbdsvtitle hlight">Engagement collaboratif</h2>
-                      <p>
-                        Unissons nos forces pour un avenir meilleur grâce à l'engagement collaboratif.
-                      </p>
-                      <div class="txbdsvbtn txbdbtnicon">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <!-- 1 single item -->
-                <div class="txbdsva allcostyle boxsh boxpsv txbdmb30 text-left  sselect">
-                  <div class="txbdsi">
-                    <div class="imageicon">
-                      <img src="assets/images/Co_choose02.png" alt="image">
-                    </div>
-                    <div class="txbdcon">
-                      <h2 class="txbdsvtitle hlight">Innovation citoyenne</h2>
-                      <p>
-                        Libérez votre potentiel et transformez votre communauté.
-                      </p>
-                      <div class="txbdsvbtn txbdbtnicon">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- 2 single item -->
-                <div class="txbdsva allcostyle boxsh boxpsv txbdmb30 text-left  sselect">
-                  <div class="txbdsi">
-                    <div class="imageicon">
-                      <img src="assets/images/ecocitoyennete.png" alt="image">
-                    </div>
-                    <div class="txbdcon">
-                      <h2 class="txbdsvtitle hlight">Éco-citoyenneté active</h2>
-                      <p>
-                        Agissez pour la planète avec une éco-citoyenneté active et responsable.
-                      </p>
-                      <div class="txbdsvbtn txbdbtnicon">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6">
-          <div class="chose_witr">
-            <div class="tts">
-              <div class="ttin text-left">
-                <h4 class="txbdstitle tsmall stone hlight txbdbcolor">Nos valeurs</h4>
-                <h2 class="txbdstitle sttwo hlight">
-                  Cercle d'Initiatives Démocratiques pour l'Entraide, la Transparence et l'Expression.
-                </h2>
-                <!--
-                <p>Emergency treatment should be treated in hospitals that have necessary
-                  knowledge, systems, and resources to maximize their chances of survival
-                  and recovery.
-                </p>
--->
-              </div>
-            </div>
-            <!--
-            <div class="chose_midd_con">
-              <div class="tts">
-                <div class="ttin text-left">
-                  <h4 class="txbdstitle tsmall stone hlight txbdbcolor">Donate on Education System </h4>
-                  <p>Nam sollicitudin libero eu diam faucibus, sit amet hendrerit
-                    scelerisqususcipit.
-                  </p>
-                </div>
-              </div>
-            </div>
--->
-            <div class="witr_button_area">
-              <div class="witr_btn_style mr">
-                <div class="witr_btn_sinner">
-                  <a href="#" class="witr_btn">Adhérer</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="cr_cas_area">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="tts">
-            <div class="ttin text-center">
-              <h4 class="txbdstitle tsmall stone hlight txbdbcolor">Nos actions</h4>
-              <h2 class="txbdstitle sttwo hlight">Renforcer la démocratie locale, promouvoir la transparence.</h2>
-            </div>
-            <div class="ttbt">
-              <h5 class="title_fillb">Cité d'Ex</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-12">
-          <div class="cas_left">
-            <div class="witr_couses all_couses_color couses_s1">
-              <div class="witr_couses_image txbdbfall boxtexrelative txbdbfltrb100 opacitybf0">
-                <img src="assets/images/formation.jpg" alt="image">
-              </div>
-              <div class="witr_content_area_c">
-                <div class="witr_content_couses">
-                  <h4 class="caus_ttitle txbdbcolor">12.570€ de 25.000€ collecté </h4>
-                  <h2 class="caus_mtitle">
-                    <a href="#">Formation et d'Éducation</a>
-                  </h2>
-                  <p>
-                    Formations sur la transparence administrative, la lutte contre la corruption.
-                  </p>
-                </div>
-                <div class="couses_single_progress all_color_bar">
-                  <div class="witr_title_bar">
-                    <span>51%</span>
-                    <span>Collecté </span>
-                  </div>
-                  <div class="progress couses_bar_percent">
-                    <div class="progress-bar wow fadeInLeft animated" data-wow-duration="1.5s" data-wow-delay="0.2s" style="width:51%">
-                    </div>
-                  </div>
-                </div>
-                <div class="witr_dis_btngr w_couses_one">
-                  <div class="witr_couses_btnb">
-                    <a class="btnallt btnall btnallactive " href="#">
-                      Faire un don
-                    </a>
-                  </div>
-                  <div class="witr_price_gr_area">
-                    <div class="witr_circal_r">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="witr_couses all_couses_color couses_s1">
-              <div class="witr_couses_image txbdbfall boxtexrelative txbdbfltrb100 opacitybf0">
-                <img src="assets/images/Co_couses2.jpg" alt="image">
-              </div>
-              <div class="witr_content_area_c">
-                <div class="witr_content_couses">
-                  <h4 class="caus_ttitle txbdbcolor">18.270€ de 22.000€ collecté </h4>
-                  <h2 class="caus_mtitle">
-                    <a href="#">Soutien Communautaire</a>
-                  </h2>
-                  <p>
-                    L'entraide et le soutien mutuel des communautés.
-                  </p>
-                </div>
-                <div class="couses_single_progress all_color_bar">
-                  <div class="witr_title_bar">
-                    <span>93%</span>
-                    <span>Collecté </span>
-                  </div>
-                  <div class="progress couses_bar_percent">
-                    <div class="progress-bar wow fadeInLeft animated" data-wow-duration="1.5s" data-wow-delay="0.2s" style="width:93%">
-                    </div>
-                  </div>
-                </div>
-                <div class="witr_dis_btngr w_couses_one">
-                  <div class="witr_couses_btnb">
-                    <a class="btnallt btnall btnallactive " href="#">
-                      Faire un don
-                    </a>
-                  </div>
-                  <div class="witr_price_gr_area">
-                    <div class="witr_circal_r">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-12">
-          <div class="cas_witr">
-            <div class="witr_couses all_couses_color">
-              <div class="witr_content_area_c">
-                <div class="witr_content_couses">
-                  <h4 class="caus_ttitle txbdbcolor">25.000€ de 27.000€ collecté </h4>
-                  <h2 class="caus_mtitle">
-                    <a href="#">Événements Culturels et Artistiques</a>
-                  </h2>
-                  <p>
-                    L'art et la culture au coeur de la sensibilisation.
-                  </p>
-                </div>
-                <div class="couses_single_progress all_color_bar">
-                  <div class="witr_title_bar">
-                    <span>80%</span>
-                    <span>Collecté </span>
-                  </div>
-                  <div class="progress couses_bar_percent">
-                    <div class="progress-bar wow fadeInLeft animated" data-wow-duration="1.5s" data-wow-delay="0.2s" style="width:80%">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="witr_cous_ib">
-                <div class="witr_couses_btnb">
-                  <a class="btnallt btnall btnallactive " href="#">Faire un don </a>
-                </div>
-                <div class="witr_couses_image txbdbfall boxtexrelative txbdbfltrb100 opacitybf0" style="margin-top: 10px;">
-                  <img src="assets/images/culturelle.jpg" alt="image">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="cr_eve_area">
+
+
+  <div class="cr_eve_area" id="event">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -354,7 +168,7 @@
                 <div class="wblogpart allcostyle">
                   <div class="wblogthumb alltcolorstyle">
                     <div class="wblogthumbinner">
-                      <a href="#">
+                      <a href="single-events.php?id=1">
                         <img src="assets/images/forum.jpg" alt="image">
                       </a>
                     </div>
@@ -365,12 +179,12 @@
                       <span><i class="icofont-google-map"></i>50120 Cherbourg-en-Cotentin France</span>
                     </div>
                     <h2 class="wblogtitle">
-                      <a href="#">Forum Citoyen sur la Transparence et la Démocratie</a>
+                      <a href="single-events.php?id=1">Forum Citoyen sur la Transparence et la Démocratie</a>
                     </h2>
                     <p>Une journée dédiée à des conférences, ateliers et tables rondes sur les thèmes de la transparence administrative, de la lutte contre la corruption, et de la participation citoyenne.</p>
                     <div class="wbriconoverhidd">
                       <div class="wblogbtn">
-                        <a class="btnallt btnall btnallactive" href="#">Participer</a>
+                        <a class="btnallt btnall btnallactive" href="contact.php">Participer</a>
                       </div>
                     </div>
                   </div>
@@ -468,19 +282,19 @@
     </div>
   </div>
 
-  <div class="cr_cont_area">
+  <div class="cr_cont_area" id="register">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-6">
           <div class="cont_left">
             <div class="tts">
               <div class="ttin text-left">
-                <h4 class="txbdstitle tsmall stone hlight txbdbcolor">Rejoignez notre communauté de soutien dès aujourd'hui ! </h4>
+                <h4 class="txbdstitle tsmall stone hlight txbdbcolor">Rejoignez notre communauté dès aujourd'hui ! </h4>
                 <h2 class="txbdstitle sttwo hlight">
-                  Vos dons nous aident à faire la différence
+                  Rejoignez-nous en tant qu'adhérents et faites la différence !
                 </h2>
                 <p>
-                  Rejoignez-nous en tant que volontaire et faites la différence ! Ensemble, nous pouvons créer un impact positif et durable dans notre communauté.
+                  Ensemble, nous pouvons créer un impact positif et durable dans notre communauté.
                 </p>
               </div>
             </div>
@@ -490,7 +304,7 @@
           <div class="apartment_area">
             <div class="apartment_text">
               <h4>Rejoignez nous</h4>
-              <h2>Devenir volontaire. </h2>
+              <h2>Devenir membre </h2>
             </div>
             <div class="witr_apartment_form">
               <form>
@@ -507,7 +321,7 @@
                   </div>
                   <div class="col-lg-6 col-md-6">
                     <div class="twr_form_box ">
-                      <input type="number" name="number" placeholder="Téléphone*">
+                      <input type="tel" name="number" placeholder="Téléphone*">
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6">
@@ -525,7 +339,7 @@
                   <div class="col-lg-12">
                     <div class="twr_form_box">
                       <span class="textarea">
-                        <textarea name="comment" placeholder="Text Message*"></textarea>
+                        <textarea name="comment" placeholder="Message"></textarea>
                       </span>
                     </div>
                   </div>
@@ -546,7 +360,7 @@
     </div>
   </div>
 
-  <div class="cr_blog_area">
+  <div class="cr_cas_area" id="actualites">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -554,92 +368,120 @@
             <div class="ttin text-center">
               <h4 class="txbdstitle tsmall stone hlight txbdbcolor">Actualités</h4>
               <h2 class="txbdstitle sttwo hlight">Vous pouvez consulter notre travail.</h2>
-              <h3 class="txbdstitle stthree hlight"></h3>
             </div>
             <div class="ttbt">
-              <h5 class="title_fillb">Cité D'Ex</h5>
+              <h5 class="title_fillb">Cité d'Ex</h5>
             </div>
           </div>
-          <div class="witr_carousel_main row">
-            <!-- 1 single blog -->
-            <div class=" col-lg-4 col-md-6 col-sm-12 witr_nth_child txbdmb30">
-              <div class="wblogpart allcostyle">
-                <div class="wblogthumb alltcolorstyle">
-                  <div class="wblogovermeta">
-                    <span> <i class="ti-tag"></i> <a href="#" rel="category tag">Climat</a> </span>
-                  </div>
-                  <div class="wblogthumbinner">
-                    <a href="#">
-                      <img src="assets/images/energie.jpg" alt="image">
-                    </a>
-                  </div>
-                </div>
-                <div class="wblogcontent allccolorstyle">
-                  <h2 class="wblogtitle">
-                    <a href="#">L'impact de la transition énergétique en France : Défis et Opportunités</a>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="cas_left">
+            <div class="witr_couses all_couses_color couses_s1">
+              <div class="witr_couses_image txbdbfall boxtexrelative txbdbfltrb100 opacitybf0">
+                <img src="assets/images/formation.jpg" alt="image">
+              </div>
+              <div class="witr_content_area_c">
+                <div class="witr_content_couses">
+                  <h4 class="caus_ttitle txbdbcolor">12.570€ de 25.000€ collecté </h4>
+                  <h2 class="caus_mtitle">
+                    <a href="single-actualites.php?id=1">Formation et d'Éducation</a>
                   </h2>
                   <p>
-                    Analyse des efforts de la France pour atteindre ses objectifs de neutralité carbone d'ici 2050, en mettant l'accent sur les défis technologiques, économiques et sociaux, ainsi que sur les innovations et les opportunités offertes par la transition énergétique.
+                    Formations sur la transparence administrative, la lutte contre la corruption.
                   </p>
-                  <div class="wbriconoverhidd">
-                    <div class="wblogbtn">
-                      <a class="btnallt btnall btnallactive " href="#">Lire plus</a>
+                </div>
+                <div class="couses_single_progress all_color_bar">
+                  <div class="witr_title_bar">
+                    <span>51%</span>
+                    <span>Collecté </span>
+                  </div>
+                  <div class="progress couses_bar_percent">
+                    <div class="progress-bar wow fadeInLeft animated" data-wow-duration="1.5s" data-wow-delay="0.2s" style="width:51%">
+                    </div>
+                  </div>
+                </div>
+                <div class="witr_dis_btngr w_couses_one">
+                  <div class="witr_couses_btnb">
+                    <a class="btnallt btnall btnallactive " href="faire-un-don.php">
+                      Faire un don
+                    </a>
+                  </div>
+                  <div class="witr_price_gr_area">
+                    <div class="witr_circal_r">
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- 2 single blog -->
-            <div class=" col-lg-4 col-md-6 col-sm-12 witr_nth_child txbdmb30">
-              <div class="wblogpart allcostyle">
-                <div class="wblogthumb alltcolorstyle">
-                  <div class="wblogovermeta">
-                    <span> <i class="ti-tag"></i> <a href="#" rel="category tag">Politique</a> </span>
-                  </div>
-                  <div class="wblogthumbinner">
-                    <a href="#">
-                      <img src="assets/images/geopolitique.jpg" alt="image">
-                    </a>
-                  </div>
-                </div>
-                <div class="wblogcontent allccolorstyle">
-                  <h2 class="wblogtitle">
-                    <a href="#">Géopolitique du 21ème siècle : les nouveaux enjeux internationaux</a>
+            <div class="witr_couses all_couses_color couses_s1">
+              <div class="witr_couses_image txbdbfall boxtexrelative txbdbfltrb100 opacitybf0">
+                <img src="assets/images/Co_couses2.jpg" alt="image">
+              </div>
+              <div class="witr_content_area_c">
+                <div class="witr_content_couses">
+                  <h4 class="caus_ttitle txbdbcolor">18.270€ de 22.000€ collecté </h4>
+                  <h2 class="caus_mtitle">
+                    <a href="single-actualites.php?id=1">Soutien Communautaire</a>
                   </h2>
                   <p>
-                    Exploration des nouvelles dynamiques géopolitiques, notamment les tensions entre grandes puissances, les accords commerciaux émergents, et les impacts des conflits régionaux sur la stabilité mondiale.
+                    L'entraide et le soutien mutuel des communautés.
                   </p>
-                  <div class="wbriconoverhidd">
-                    <div class="wblogbtn">
-                      <a class="btnallt btnall btnallactive " href="#">Lire plus</a>
+                </div>
+                <div class="couses_single_progress all_color_bar">
+                  <div class="witr_title_bar">
+                    <span>93%</span>
+                    <span>Collecté </span>
+                  </div>
+                  <div class="progress couses_bar_percent">
+                    <div class="progress-bar wow fadeInLeft animated" data-wow-duration="1.5s" data-wow-delay="0.2s" style="width:93%">
+                    </div>
+                  </div>
+                </div>
+                <div class="witr_dis_btngr w_couses_one">
+                  <div class="witr_couses_btnb">
+                    <a class="btnallt btnall btnallactive " href="contact.php">
+                      Proposition de sujet
+                    </a>
+                  </div>
+                  <div class="witr_price_gr_area">
+                    <div class="witr_circal_r">
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- 3 single blog -->
-            <div class=" col-lg-4 col-md-6 col-sm-12 witr_nth_child txbdmb30">
-              <div class="wblogpart allcostyle">
-                <div class="wblogthumb alltcolorstyle">
-                  <div class="wblogovermeta">
-                    <span> <i class="ti-tag"></i> <a href="#" rel="category tag">Technologie</a> </span>
-                  </div>
-                  <div class="wblogthumbinner">
-                    <a href="#">
-                      <img src="assets/images/education.jpg" alt="image">
-                    </a>
-                  </div>
-                </div>
-                <div class="wblogcontent allccolorstyle">
-                  <h2 class="wblogtitle">
-                    <a href="#">L'avenir de l'éducation : intégration des technologies numériques en classe</a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="cas_witr">
+            <div class="witr_couses all_couses_color">
+              <div class="witr_content_area_c">
+                <div class="witr_content_couses">
+                  <h4 class="caus_ttitle txbdbcolor">25.000€ de 27.000€ collecté </h4>
+                  <h2 class="caus_mtitle">
+                    <a href="single-actualites.php?id=1">Événements Culturels et Artistiques</a>
                   </h2>
-                  <p>Analyse de l'impact de la digitalisation sur le système éducatif, des avantages et des défis de l'apprentissage en ligne, et des initiatives pour améliorer l'accès à une éducation de qualité à l'ère numérique.</p>
-                  <div class="wbriconoverhidd">
-                    <div class="wblogbtn">
-                      <a class="btnallt btnall btnallactive " href="#">Lire plus</a>
+                  <p>
+                    L'art et la culture au coeur de la sensibilisation.
+                  </p>
+                </div>
+                <div class="couses_single_progress all_color_bar">
+                  <div class="witr_title_bar">
+                    <span>80%</span>
+                    <span>Collecté </span>
+                  </div>
+                  <div class="progress couses_bar_percent">
+                    <div class="progress-bar wow fadeInLeft animated" data-wow-duration="1.5s" data-wow-delay="0.2s" style="width:80%">
                     </div>
                   </div>
+                </div>
+              </div>
+              <div class="witr_cous_ib">
+                <div class="witr_couses_btnb">
+                  <a class="btnallt btnall btnallactive " href="contact.php">Participer </a>
+                </div>
+                <div class="witr_couses_image txbdbfall boxtexrelative txbdbfltrb100 opacitybf0" style="margin-top: 10px;">
+                  <img src="assets/images/culturelle.jpg" alt="image">
                 </div>
               </div>
             </div>
@@ -648,6 +490,124 @@
       </div>
     </div>
   </div>
+
+  <!--
+  <div class="cr_blog_area" id="actualites">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="tts">
+            <div class="ttin text-center">
+              <div class="marquee">
+                <h4 class="txbdstitle tsmall stone hlight txbdbcolor" id="marquee-text">Actualités</h4>
+              </div>
+              <h2 class=" txbdstitle sttwo hlight">Vous pouvez consulter notre travail.</h2>
+              <h3 class="txbdstitle stthree hlight"></h3>
+            </div>
+            <div class="ttbt">
+              <h5 class="title_fillb">Cité D'Ex</h5>
+            </div>
+          </div>
+          <div class="witr_carousel_main row" id="">
+
+            <div class=" col-lg-4 col-md-6 col-sm-12 witr_nth_child txbdmb30">
+              <div class="wblogpart allcostyle">
+                <div class="wblogthumb alltcolorstyle">
+                  <div class="wblogthumbinner">
+                    <a href="#">
+                      <img src="assets/images/energie.jpg" alt="image">
+                    </a>
+                  </div>
+                </div>
+                <div class="wblogcontent allccolorstyle">
+                  <h2 class="wblogtitle">
+                    <a href="#">DÉMOCRATIE ET POLITIQUE</a>
+                  </h2>
+                </div>
+              </div>
+            </div>
+   
+            <div class=" col-lg-4 col-md-6 col-sm-12 witr_nth_child txbdmb30">
+              <div class="wblogpart allcostyle">
+                <div class="wblogthumb alltcolorstyle">
+                  <div class="wblogthumbinner">
+                    <a href="#">
+                      <img src="assets/images/geopolitique.jpg" alt="image">
+                    </a>
+                  </div>
+                </div>
+                <div class="wblogcontent allccolorstyle">
+                  <h2 class="wblogtitle">
+                    <a href="#">ENGAGEMENT CITOYEN</a>
+                  </h2>
+                </div>
+              </div>
+            </div>
+            
+            <div class=" col-lg-4 col-md-6 col-sm-12 witr_nth_child txbdmb30">
+              <div class="wblogpart allcostyle">
+                <div class="wblogthumb alltcolorstyle">
+                  <div class="wblogthumbinner">
+                    <a href="#">
+                      <img src="assets/images/education.jpg" alt="image">
+                    </a>
+                  </div>
+                </div>
+                <div class="wblogcontent allccolorstyle">
+                  <h2 class="wblogtitle">
+                    <a href="#">ENVIRONNEMENT ET DÉVELOPPEMENT DURABLE</a>
+                  </h2>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="witr_carousel_main row" id="">
+
+            <div class=" col-lg-4 col-md-6 col-sm-12 witr_nth_child txbdmb30">
+              <div class="wblogpart allcostyle">
+                <div class="wblogthumb alltcolorstyle">
+                  <div class="wblogthumbinner">
+                    <a href="#">
+                      <img src="assets/images/energie.jpg" alt="image">
+                    </a>
+                  </div>
+                </div>
+                <div class="wblogcontent allccolorstyle">
+                  <h2 class="wblogtitle">
+                    <a href="#">ÉCONOMIE LOCALE & TRADITION</a>
+                  </h2>
+                </div>
+              </div>
+            </div>
+
+            <div class=" col-lg-4 col-md-6 col-sm-12 witr_nth_child txbdmb30">
+              <div class="wblogpart allcostyle">
+                <div class="wblogthumb alltcolorstyle">
+                  <div class="wblogthumbinner">
+                    <a href="#">
+                      <img src="assets/images/geopolitique.jpg" alt="image">
+                    </a>
+                  </div>
+                </div>
+                <div class="wblogcontent allccolorstyle">
+                  <h2 class="wblogtitle">
+                    <a href="#">SIGNALEMENTS & ENTRAIDE</a>
+                  </h2>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
 
   <!-- feature area -->
   <div class="cr_fea_area">
@@ -664,7 +624,7 @@
                 <h2 class="txbdsvtitle hlight">Espace d'Expression</h2>
 
                 <div class="txbdsvbtn txbdbtnicon">
-                  <a class="btnallt btnall btnallactive" href="#">Adhérer</a>
+                  <a class="btnallt btnall btnallactive" href="contact.php">Partager une activité</a>
                 </div>
               </div>
             </div>
@@ -680,7 +640,7 @@
               <div class="txbdcon">
                 <h2 class="txbdsvtitle hlight">Rassemblement citoyen</h2>
                 <div class="txbdsvbtn txbdbtnicon">
-                  <a class="btnallt btnall btnallactive" href="#">Adhérer</a>
+                  <a class="btnallt btnall btnallactive" href="contact.php">Proposer un sujet</a>
                 </div>
               </div>
             </div>
@@ -696,7 +656,7 @@
               <div class="txbdcon">
                 <h2 class="txbdsvtitle hlight">Entraide</h2>
                 <div class="txbdsvbtn txbdbtnicon">
-                  <a class="btnallt btnall btnallactive" href="#">Adhérer</a>
+                  <a class="btnallt btnall btnallactive" href="faire-un-don.php">Faire un don</a>
                 </div>
               </div>
             </div>
@@ -812,9 +772,7 @@
   ?>
 
 
-
-
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
   <script src="assets/js/vendor/jquery-3.5.1.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
@@ -829,6 +787,7 @@
   <script src="assets/js/jquery.meanmenu.js"></script>
   <script src="assets/js/ajax-mail.js"></script>
   <script src="assets/js/theme.js"></script>
+
 </body>
 
 

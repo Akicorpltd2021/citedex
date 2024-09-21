@@ -1,4 +1,10 @@
 <div class="computertemplateheader">
+  <div class="firstSectionHeader">
+    <a class="" href="index.php" title="Cité d'Ex">
+      <img src="assets/images/Logo_simple_cite_dex.png" style="width: 55%;" alt="Cité d'Ex">
+    </a>
+    <h1 style="font-size: 42px;"> Cercle d'Initiatives Démocratiques pour l'Entraide, la Transparence et l'Expression</h1>
+  </div>
 
   <div class="em40_header_area_main">
     <div class="charido-header-top">
@@ -17,15 +23,18 @@
                 <span>
                   <i class="icofont-wall-clock"></i> Lun-Ven: 9:00 à 18:00
                 </span>
+                <!--
                 <a href="#">
                   <i class="icofont-google-map"></i>60 rue C. de FOUCAULD 33150 CENON
                 </a>
+-->
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!--
     <div class="charido_header_top_two top_cr_style4 top_crt_style">
       <div class="container">
         <div class="row">
@@ -64,6 +73,7 @@
         </div>
       </div>
     </div>
+    !-->
     <div class="charido-main-menu one_page hidden-xs hidden-sm witr_h_h22">
       <div class="charido_nav_area scroll_fixed">
         <div class="container">
@@ -73,13 +83,13 @@
               <nav class="charido_menu menu_search">
                 <ul class="sub-menu">
                   <li><a href="index.php">Accueil</a></li>
-                  <li><a href="#">Présentation</a></li>
-                  <li><a href="#">Nos actions</a></li>
-                  <li><a href="#">Nos évènements</a></li>
-                  <li><a href="#">Actualités</a></li>
-                  <li><a href="#">Proposition de sujet</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#" class="linkbutton">Nous soutenir</a></li>
+                  <li><a href="a-propos.php">Présentation</a></li>
+                  <!--<li><a href="index.php#actions">Nos actions</a></li>-->
+                  <li><a href="index.php#event" class="scroll-link">Nos évènements</a></li>
+                  <li><a href="index.php#actualites" class="scroll-link">Actualités</a></li>
+                  <li><a href="contact.php">Proposition de sujet</a></li>
+                  <li><a href="contact.php">Contact</a></li>
+                  <li><a href="faire-un-don.php" class="linkbutton">Nous soutenir</a></li>
                 </ul>
               </nav>
             </div>
@@ -116,13 +126,13 @@
                     <nav class="charido_menu">
                       <ul class="sub-menu">
                         <li><a href="index.php">Accueil</a></li>
-                        <li><a href="#">Présentation</a></li>
-                        <li><a href="#">Nos actions</a></li>
-                        <li><a href="#">Nos évènements</a></li>
-                        <li><a href="#">Actualités</a></li>
-                        <li><a href="#">Proposition de sujet</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Nous soutenir</a></li>
+                        <li><a href="a-propos.php">Présentation</a></li>
+                        <!--<li><a href="index.php#actions">Nos actions</a></li>-->
+                        <li><a href="index.php#event" class="scroll-link">Nos évènements</a></li>
+                        <li><a href="index.php#actualites" class="scroll-link">Actualités</a></li>
+                        <li><a href="contact.php">Proposition de sujet</a></li>
+                        <li><a href="contact.php">Contact</a></li>
+                        <li><a href="faire-un-don.php">Nous soutenir</a></li>
                       </ul>
                     </nav>
                   </div>

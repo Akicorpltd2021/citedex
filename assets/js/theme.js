@@ -446,7 +446,7 @@
 
 	/*=== type writer ===*/
 
-	var textTypeWriter = " “l’homme au centre de l’univers” pour agir dans un intérêt général.";
+	var textTypeWriter = "Espace indépendant de réflexions, rencontres et informations dans les domaines anthropocentriques “l’homme au centre de l’univers” pour agir dans un intérêt général.";
 	var indexTypeWriter = 0;
 	var speedTypeWriter = 70; // Vitesse en millisecondes entre chaque lettre
 	var $enEcriture = $('#enEcriture');
@@ -457,7 +457,7 @@
 			indexTypeWriter++;
 			setTimeout(typeWriter, speedTypeWriter);
 		} else {
-			$enEcriture.fadeOut();
+			//$enEcriture.fadeOut();
 		}
 	}
 
@@ -488,6 +488,37 @@
 		requestAnimationFrame(countUp);
 
 	}, { offset: '100%' });
+
+	$('.scroll-link').on('click', function (e) {
+		e.preventDefault(); // Empêche le comportement par défaut du lien
+
+		var target = this.hash; // Récupère l'ancre cible (#event, #actualites, etc.)
+		var currentUrl = window.location.href; // URL actuelle
+
+		// Vérifie si tu es déjà sur index.php
+		if (currentUrl.includes("index.php") || currentUrl.endsWith("/")) {
+			// Si déjà sur index.php, scroll fluide
+			var $target = $(target);
+			$('html, body').animate({
+				scrollTop: $target.offset().top
+			}, 900, 'linear');
+		} else {
+			// Si pas sur index.php, redirige vers index.php avec l'ancre
+			window.location.href = 'index.php' + target;
+		}
+	});
+
+
+	/*
+		tns({
+			container: '#sliderActualitesCreate',
+			items: 3,
+			slideBy: 'page',
+			autoplay: true,
+			controls: false,
+			loop: true,
+		});
+	*/
 
 
 })(jQuery);

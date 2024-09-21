@@ -587,6 +587,7 @@ ul.top_crmenu_i_list.text-left {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    justify-content: center;
 }
 
 .search_popup_button,
@@ -616,7 +617,7 @@ ul.top_crmenu_i_list.text-left {
 }
 
 .top-address {
-    display: inline-block;
+    /*display: inline-block;*/
 }
 
 /* logo sticky */
@@ -667,7 +668,7 @@ ul.top_crmenu_i_list.text-left {
     margin: 25px 18px;
     transition: .5s;
     position: relative;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 700;
     color: #000000;
     font-family: 'Manrope', sans-serif;
@@ -5617,7 +5618,7 @@ p.form-messege {
 
 #enEcriture {
     display: inline-block;
-    animation: heartbeat 4s infinite;
+    /*animation: heartbeat 4s infinite;*/
 }
 
 
@@ -5661,13 +5662,63 @@ p.form-messege {
 }
 
 .textBanniereCustomize {
+    color: #fe7f4c;
+    text-align: center;
+    font-size: 32px !important;
+}
+
+.centerBoxBan {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+}
+
+.pictoGrammeBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pictoCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.pictoCard:hover {
+    animation: zoomIn 2s ease-in-out forwards;
+}
+
+.pictoTitle {
+    font-size: 21px;
     color: #fe7f4c;
     text-align: center;
+}
+
+.pictoTitleFirst {
+    font-size: 28px;
+    color: #fe7f4c;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.pictoIcone {
+    width: 60px;
+    height: auto;
+}
+
+.listeValeurs li {
+    list-style: inside !important;
+
 }
 
 .adhererCustomize {
@@ -5679,8 +5730,57 @@ p.form-messege {
     z-index: 2;
 }
 
+
+
 .mobiletcustomheader {
     display: none;
+}
+
+.firstSectionHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.firstSectionHeader h1 {
+    font-size: 21px;
+    text-align: center;
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+
+#marquee-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+        /* Le facteur de zoom, ici x2 */
+    }
 }
 
 @media screen and (max-width: 960px) {
@@ -5693,13 +5793,41 @@ p.form-messege {
     }
 
     .textBanniereCustomize {
-        font-size: 28px !important;
-        text-align: left !important;
+        font-size: 16px !important;
+        text-align: center !important;
+        display: none;
     }
 
     .mobilelogo {
         width: 80px !important;
     }
+
+
+    .pictoGrammeBox {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 colonnes de taille égale */
+        grid-template-rows: repeat(3, auto);
+        /* 3 lignes de hauteur automatique */
+        gap: 10px;
+        /* Espace entre les éléments de la grille */
+    }
+
+    .pictoTitle {
+        font-size: 16px;
+        color: #fe7f4c;
+        text-align: center;
+    }
+
+    .pictoTitleFirst {
+        font-size: 22px;
+        color: #fe7f4c;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+
+
 
 
 }
