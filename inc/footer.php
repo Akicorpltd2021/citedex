@@ -70,7 +70,10 @@
                 <a href="index.php#register" class="scroll-link">Devenir membre</a>
               </li>
               <li>
-                <a href="index.php#event" class="scroll-link">Evènements à venir</a>
+                <a href="cgu.php">CGU</a>
+              </li>
+              <li>
+                <a href="rgpd.php">RGPD</a>
               </li>
             </ul>
           </div>

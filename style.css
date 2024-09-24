@@ -5644,7 +5644,7 @@ p.form-messege {
     align-items: center;
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 800px;
     margin-bottom: 80px;
     /* Vous pouvez conserver la hauteur fixe pour le conteneur principal */
 }
@@ -5665,6 +5665,7 @@ p.form-messege {
     color: #fe7f4c;
     text-align: center;
     font-size: 32px !important;
+    margin-bottom: 120px;
 }
 
 .centerBoxBan {
@@ -5762,6 +5763,10 @@ p.form-messege {
     animation: marquee 10s linear infinite;
 }
 
+.cgubox{
+    padding: 60px 120px;
+}
+
 @keyframes marquee {
     0% {
         transform: translateX(100%);
@@ -5793,9 +5798,10 @@ p.form-messege {
     }
 
     .textBanniereCustomize {
-        font-size: 16px !important;
+        font-size: 24px !important;
         text-align: center !important;
         display: none;
+        margin-bottom: 60px;
     }
 
     .mobilelogo {

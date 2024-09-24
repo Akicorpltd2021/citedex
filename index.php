@@ -36,36 +36,33 @@
       </h1>
       <h2 class="pictoTitleFirst">Quel citoyen êtes vous ?</h2>
       <div class="pictoGrammeBox">
-        <a href="citoyen.php?id=1" class="pictoCard">
+        <a href="citoyen.php?title=Démocratie et politique" class="pictoCard">
           <h3 class="pictoTitle">Démocratie et politique</h3>
           <img src="assets/images/vote_action.png" class="pictoIcone" alt="Cité d'Ex">
         </a>
-        <a href="citoyen.php?id=1" class="pictoCard">
+        <a href="citoyen.php?title=Engagement citoyen" class="pictoCard">
           <h3 class="pictoTitle">Engagement citoyen</h3>
           <img src="assets/images/citoyennete.png" class="pictoIcone" alt="Cité d'Ex">
         </a>
-        <a href="citoyen.php?id=1" class="pictoCard">
+        <a href="citoyen.php?title=Environnement et developpement durable" class="pictoCard">
           <h3 class="pictoTitle">Environnement et developpement durable</h3>
           <img src="assets/images/environnement.png" class="pictoIcone" alt="Cité d'Ex">
         </a>
-        <a href="citoyen.php?id=1" class="pictoCard">
+        <a href="citoyen.php?title=Santé et bien-être" class="pictoCard">
           <h3 class="pictoTitle">Santé et bien-être</h3>
           <img src="assets/images/sante.png" class="pictoIcone" alt="Cité d'Ex">
         </a>
-        <a href="citoyen.php?id=1" class="pictoCard">
+        <a href="citoyen.php?title=Economie locale et tradition" class="pictoCard">
           <h3 class="pictoTitle">Economie locale et tradition</h3>
           <img src="assets/images/economie.png" class="pictoIcone" alt="Cité d'Ex">
         </a>
-        <a href="citoyen.php?id=1" class="pictoCard">
+        <a href="citoyen.php?title=Signalements et entraides" class="pictoCard">
           <h3 class="pictoTitle">Signalements et entraides</h3>
           <img src="assets/images/entraide.png" class="pictoIcone" alt="Cité d'Ex">
         </a>
 
       </div>
     </div>
-    <!--
-   
--->
 
     <div class="adhererCustomize">
       <a href="#register" class="linkbutton scroll-link" style="padding: 14px 60px;">Adhérer</a>
@@ -81,6 +78,7 @@
             <div class="witr_play_vi witr_all_color_v">
               <div class="witr_videobg_image boxtextposire">
                 <img src="assets/images/about.png" alt="image">
+                <!--
                 <div class="boxtextposi zindex999 boxposiltrb">
                   <div class="boxtextposineer">
                     <div class="play-overlay>">
@@ -90,6 +88,7 @@
                     </div>
                   </div>
                 </div>
+-->
               </div>
             </div>
           </div>
@@ -329,9 +328,12 @@
                       <span data-name="ooselect">
                         <select class="wpcf7-form-control wpcf7-select form-control" name="ooselect">
                           <option value="Categories">Catégories</option>
-                          <option value="Education">Education</option>
-                          <option value="Nonprofit">Politique</option>
-                          <option value="Medical">Santé</option>
+                          <option value="Démocratie et politique">Démocratie et politique</option>
+                          <option value="Engagement citoyen">Engagement citoyen</option>
+                          <option value="Environnement et developpement durable">Environnement et developpement durable</option>
+                          <option value="Santé et bien-être">Santé et bien-être</option>
+                          <option value="Economie locale et tradition">Economie locale et tradition</option>
+                          <option value="Signalements et entraides">Signalements et entraides</option>
                         </select>
                       </span>
                     </div>
@@ -382,23 +384,12 @@
               </div>
               <div class="witr_content_area_c">
                 <div class="witr_content_couses">
-                  <h4 class="caus_ttitle txbdbcolor">12.570€ de 25.000€ collecté </h4>
                   <h2 class="caus_mtitle">
                     <a href="single-actualites.php?id=1">Formation et d'Éducation</a>
                   </h2>
                   <p>
                     Formations sur la transparence administrative, la lutte contre la corruption.
                   </p>
-                </div>
-                <div class="couses_single_progress all_color_bar">
-                  <div class="witr_title_bar">
-                    <span>51%</span>
-                    <span>Collecté </span>
-                  </div>
-                  <div class="progress couses_bar_percent">
-                    <div class="progress-bar wow fadeInLeft animated" data-wow-duration="1.5s" data-wow-delay="0.2s" style="width:51%">
-                    </div>
-                  </div>
                 </div>
                 <div class="witr_dis_btngr w_couses_one">
                   <div class="witr_couses_btnb">
@@ -419,23 +410,12 @@
               </div>
               <div class="witr_content_area_c">
                 <div class="witr_content_couses">
-                  <h4 class="caus_ttitle txbdbcolor">18.270€ de 22.000€ collecté </h4>
                   <h2 class="caus_mtitle">
                     <a href="single-actualites.php?id=1">Soutien Communautaire</a>
                   </h2>
                   <p>
                     L'entraide et le soutien mutuel des communautés.
                   </p>
-                </div>
-                <div class="couses_single_progress all_color_bar">
-                  <div class="witr_title_bar">
-                    <span>93%</span>
-                    <span>Collecté </span>
-                  </div>
-                  <div class="progress couses_bar_percent">
-                    <div class="progress-bar wow fadeInLeft animated" data-wow-duration="1.5s" data-wow-delay="0.2s" style="width:93%">
-                    </div>
-                  </div>
                 </div>
                 <div class="witr_dis_btngr w_couses_one">
                   <div class="witr_couses_btnb">
@@ -457,23 +437,12 @@
             <div class="witr_couses all_couses_color">
               <div class="witr_content_area_c">
                 <div class="witr_content_couses">
-                  <h4 class="caus_ttitle txbdbcolor">25.000€ de 27.000€ collecté </h4>
                   <h2 class="caus_mtitle">
                     <a href="single-actualites.php?id=1">Événements Culturels et Artistiques</a>
                   </h2>
                   <p>
                     L'art et la culture au coeur de la sensibilisation.
                   </p>
-                </div>
-                <div class="couses_single_progress all_color_bar">
-                  <div class="witr_title_bar">
-                    <span>80%</span>
-                    <span>Collecté </span>
-                  </div>
-                  <div class="progress couses_bar_percent">
-                    <div class="progress-bar wow fadeInLeft animated" data-wow-duration="1.5s" data-wow-delay="0.2s" style="width:80%">
-                    </div>
-                  </div>
                 </div>
               </div>
               <div class="witr_cous_ib">
@@ -618,13 +587,12 @@
           <div class="txbdsva allcostyle boxsh boxpsv txbdmb30 fea_1 text-center sselect">
             <div class="txbdsi">
               <div class="txbdicon iconalltf iconall iconallactive  ">
-                <i class="icofont icofont-fruits"></i>
+                <img src="assets/images/expression.png" class="pictoIcone" alt="Cité d'Ex">
               </div>
               <div class="txbdcon">
                 <h2 class="txbdsvtitle hlight">Espace d'Expression</h2>
-
                 <div class="txbdsvbtn txbdbtnicon">
-                  <a class="btnallt btnall btnallactive" href="contact.php">Partager une activité</a>
+                  <a class="btnallt btnall btnallactive" href="contact.php">Proposer un sujet</a>
                 </div>
               </div>
             </div>
@@ -635,12 +603,12 @@
           <div class="txbdsva allcostyle boxsh boxpsv txbdmb30 fea_1 text-center sselect">
             <div class="txbdsi">
               <div class="txbdicon iconalltf iconall iconallactive">
-                <i class="icofont icofont-water-drop"></i>
+                <img src="assets/images/citoyennete.png" class="pictoIcone" alt="Cité d'Ex">
               </div>
               <div class="txbdcon">
                 <h2 class="txbdsvtitle hlight">Rassemblement citoyen</h2>
                 <div class="txbdsvbtn txbdbtnicon">
-                  <a class="btnallt btnall btnallactive" href="contact.php">Proposer un sujet</a>
+                  <a class="btnallt btnall btnallactive" href="contact.php">Partager une activité</a>
                 </div>
               </div>
             </div>
@@ -651,7 +619,7 @@
           <div class="txbdsva allcostyle boxsh boxpsv txbdmb30 fea_1 text-center sselect">
             <div class="txbdsi">
               <div class="txbdicon iconalltf iconall iconallactive">
-                <i class="icofont icofont-read-book-alt"></i>
+                <img src="assets/images/entraide.png" class="pictoIcone" alt="Cité d'Ex">
               </div>
               <div class="txbdcon">
                 <h2 class="txbdsvtitle hlight">Entraide</h2>

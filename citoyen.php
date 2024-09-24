@@ -3,7 +3,7 @@
 
 
 <head>
- <title>Citoyen – Cité d'Ex</title>
+ <title><?php echo $_GET["title"] ?> – Cité d'Ex</title>
  <meta charset="utf-8">
  <meta name="format-detection" content="telephone=no">
  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0,  user-scalable=0">
@@ -28,8 +28,121 @@
  <!-- mobile menu -->
  <!-- End Mobile Menu -->
  <!-- breadcumb area -->
- 
+ <div class="breadcumb-area">
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12 txtc  text-center ccase">
+     <div class="brpt">
+      <h2><?php echo $_GET["title"] ?></h2>
+     </div>
+     <div class="breadcumb-inner">
+      <ul>
+       <!--
+       <li>You here! <i class="icofont-thin-right"></i></li>
+       -->
+       <li><a href="index.php">Accueil</a></li>
+       <li><i class="icofont-thin-right"></i></li>
+       <li><span class="current"><?php echo $_GET["title"] ?></span></li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
  <!-- End breadcumb area -->
+
+
+ <!-- testimonial area -->
+ <div class="cr_test_area test_page_test">
+  <div class="container">
+   <div class="row">
+    <div class="col-lg-12">
+     <div class="tts">
+      <div class="ttin text-center ">
+       <h4 class="txbdstitle tsmall stone hlight txbdbcolor"><?php echo $_GET["title"] ?></h4>
+       <h2 class="txbdstitle sttwo hlight">La force de notre communauté</h2>
+       <h3 class="txbdstitle stthree hlight">A travers le monde</h3>
+      </div>
+     </div>
+     <div class="test_active row">
+      <!-- 1 single testimonial -->
+      <div class="col-md-12 txbdmb30">
+       <div class="tsitem alltesicl">
+        <div class="tsimg tsst4 tsdflex d-flex align-items-center justify-content-start">
+         <h2 class="tstitle">Une avancée vers le developpement durable</h2>
+        </div>
+        <div class="tscon">
+         <p>I was very impresed the service ipsum
+          is simply free text used by copy ping ex
+          refreshing. Neque porro est is dolorem
+          ipsum quia.
+         </p>
+         <div class="tsreview tsdflex d-flex align-items-center justify-content-start">
+          <a href="#" class="linkbutton" style="padding: 14px 60px; margin-top:10px;">Lire</a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <!-- 2 single testimonial -->
+      <div class="col-md-12 txbdmb30">
+       <div class="tsitem alltesicl">
+        <div class="tsimg tsst4 tsdflex d-flex align-items-center justify-content-start">
+         <h2 class="tstitle">Une avancée vers le developpement durable</h2>
+        </div>
+        <div class="tscon">
+         <p>I was very impresed the service ipsum
+          is simply free text used by copy ping ex
+          refreshing. Neque porro est is dolorem
+          ipsum quia.
+         </p>
+         <div class="tsreview tsdflex d-flex align-items-center justify-content-start">
+          <a href="#" class="linkbutton" style="padding: 14px 60px; margin-top:10px;">Lire</a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <!-- 3 single testimonial -->
+      <div class="col-md-12 txbdmb30">
+       <div class="tsitem alltesicl">
+        <div class="tsimg tsst4 tsdflex d-flex align-items-center justify-content-start">
+         <h2 class="tstitle">Une avancée vers le developpement durable</h2>
+        </div>
+        <div class="tscon">
+         <p>I was very impresed the service ipsum
+          is simply free text used by copy ping ex
+          refreshing. Neque porro est is dolorem
+          ipsum quia.
+         </p>
+         <div class="tsreview tsdflex d-flex align-items-center justify-content-start">
+          <a href="#" class="linkbutton" style="padding: 14px 60px; margin-top:10px;">Lire</a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <!-- 4 single testimonial -->
+      <div class="col-md-12 txbdmb30">
+       <div class="tsitem alltesicl">
+        <div class="tsimg tsst4 tsdflex d-flex align-items-center justify-content-start">
+         <h2 class="tstitle">Une avancée vers le developpement durable</h2>
+        </div>
+        <div class="tscon">
+         <p>I was very impresed the service ipsum
+          is simply free text used by copy ping ex
+          refreshing. Neque porro est is dolorem
+          ipsum quia.
+         </p>
+         <div class="tsreview tsdflex d-flex align-items-center justify-content-start">
+          <a href="#" class="linkbutton" style="padding: 14px 60px; margin-top:10px;">Lire</a>
+         </div>
+        </div>
+       </div>
+      </div>
+
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
 
  <div class="cr_cont_area" id="register">
   <div class="container">
@@ -38,7 +151,7 @@
      <div class="cont_left">
       <div class="tts">
        <div class="ttin text-left">
-        <h4 class="txbdstitle tsmall stone hlight txbdbcolor">Démocratie et Politique </h4>
+        <h4 class="txbdstitle tsmall stone hlight txbdbcolor">Rejoignez notre communauté dès aujourd'hui !</h4>
         <h2 class="txbdstitle sttwo hlight">
          Rejoignez-nous en tant qu'adhérents et faites la différence !
         </h2>
@@ -78,9 +191,12 @@
            <span data-name="ooselect">
             <select class="wpcf7-form-control wpcf7-select form-control" name="ooselect">
              <option value="Categories">Catégories</option>
-             <option value="Education">Education</option>
-             <option value="Nonprofit">Politique</option>
-             <option value="Medical">Santé</option>
+             <option value="Démocratie et politique">Démocratie et politique</option>
+             <option value="Engagement citoyen">Engagement citoyen</option>
+             <option value="Environnement et developpement durable">Environnement et developpement durable</option>
+             <option value="Santé et bien-être">Santé et bien-être</option>
+             <option value="Economie locale et tradition">Economie locale et tradition</option>
+             <option value="Signalements et entraides">Signalements et entraides</option>
             </select>
            </span>
           </div>
@@ -109,107 +225,53 @@
   </div>
  </div>
  <!-- testimonial area -->
- <div class="cr_test_area test_page_test">
+
+ <div class="cr_fea_area" style="margin-top: 15px;">
   <div class="container">
    <div class="row">
-    <div class="col-lg-12">
-     <div class="tts">
-      <div class="ttin text-center ">
-       <h4 class="txbdstitle tsmall stone hlight txbdbcolor">Nos adhérents </h4>
-       <h2 class="txbdstitle sttwo hlight">La force de notre communauté</h2>
-       <h3 class="txbdstitle stthree hlight">A travers le monde</h3>
+    <!-- 1 single feature -->
+    <div class="col-lg-4 col-md-6">
+     <div class="txbdsva allcostyle boxsh boxpsv txbdmb30 fea_1 text-center sselect">
+      <div class="txbdsi">
+       <div class="txbdicon iconalltf iconall iconallactive  ">
+        <img src="assets/images/expression.png" class="pictoIcone" alt="Cité d'Ex">
+       </div>
+       <div class="txbdcon">
+        <h2 class="txbdsvtitle hlight">Espace d'Expression</h2>
+        <div class="txbdsvbtn txbdbtnicon">
+         <a class="btnallt btnall btnallactive" href="contact.php">Proposer un sujet</a>
+        </div>
+       </div>
       </div>
      </div>
-     <div class="test_active row">
-      <!-- 1 single testimonial -->
-      <div class="col-md-12 txbdmb30">
-       <div class="tsitem alltesicl">
-        <div class="tsimg tsst4 tsdflex d-flex align-items-center justify-content-start">
-         <div class="tsimgin tsimg-mr25">
-          <img src="assets/images/Co_testi1.png" alt="image">
-         </div>
-         <h2 class="tstitle">Marcos Fernando<span class="tesspanf d-block txbdbcolor"> Membre </span> </h2>
-        </div>
-        <div class="tscon">
-         <p>I was very impresed the service ipsum
-          is simply free text used by copy ping ex
-          refreshing. Neque porro est is dolorem
-          ipsum quia.
-         </p>
-         <div class="tsreview tsdflex d-flex align-items-center justify-content-start">
-          <div class="tsrevstar">
-           <i class="ti-star txbdbcolor"></i><i class="ti-star txbdbcolor"></i><i class="ti-star txbdbcolor"></i><i class="ti-star txbdbcolor"></i><i class="ti-star txbdbcolor"></i>
-          </div>
-         </div>
+    </div>
+    <!-- 2 single feature -->
+    <div class="col-lg-4 col-md-6">
+     <div class="txbdsva allcostyle boxsh boxpsv txbdmb30 fea_1 text-center sselect">
+      <div class="txbdsi">
+       <div class="txbdicon iconalltf iconall iconallactive">
+        <img src="assets/images/citoyennete.png" class="pictoIcone" alt="Cité d'Ex">
+       </div>
+       <div class="txbdcon">
+        <h2 class="txbdsvtitle hlight">Rassemblement citoyen</h2>
+        <div class="txbdsvbtn txbdbtnicon">
+         <a class="btnallt btnall btnallactive" href="contact.php">Partager une activité</a>
         </div>
        </div>
       </div>
-      <!-- 2 single testimonial -->
-      <div class="col-md-12 txbdmb30">
-       <div class="tsitem alltesicl">
-        <div class="tsimg tsst4 tsdflex d-flex align-items-center justify-content-start">
-         <div class="tsimgin tsimg-mr25">
-          <img src="assets/images/Co_testi2.png" alt="image">
-         </div>
-         <h2 class="tstitle">Bess Palmena <span class="tesspanf d-block txbdbcolor"> Donateur </span> </h2>
-        </div>
-        <div class="tscon">
-         <p>I was very impresed the service ipsum
-          is simply free text used by copy ping ex
-          refreshing. Neque porro est is dolorem
-          ipsum quia.
-         </p>
-         <div class="tsreview tsdflex d-flex align-items-center justify-content-start">
-          <div class="tsrevstar">
-           <i class="ti-star txbdbcolor"></i><i class="ti-star txbdbcolor"></i><i class="ti-star txbdbcolor"></i><i class="ti-star txbdbcolor"></i><i class="ti-star txbdbcolor"></i>
-          </div>
-         </div>
-        </div>
+     </div>
+    </div>
+    <!-- 3. single feature -->
+    <div class="col-lg-4 col-md-6">
+     <div class="txbdsva allcostyle boxsh boxpsv txbdmb30 fea_1 text-center sselect">
+      <div class="txbdsi">
+       <div class="txbdicon iconalltf iconall iconallactive">
+        <img src="assets/images/entraide.png" class="pictoIcone" alt="Cité d'Ex">
        </div>
-      </div>
-      <!-- 3 single testimonial -->
-      <div class="col-md-12 txbdmb30">
-       <div class="tsitem alltesicl">
-        <div class="tsimg tsst4 tsdflex d-flex align-items-center justify-content-start">
-         <div class="tsimgin tsimg-mr25">
-          <img src="assets/images/Co_testi3.png" alt="image">
-         </div>
-         <h2 class="tstitle">Johnny Thomas<span class="tesspanf d-block txbdbcolor"> Membre </span> </h2>
-        </div>
-        <div class="tscon">
-         <p>I was very impresed the service ipsum
-          is simply free text used by copy ping ex
-          refreshing. Neque porro est is dolorem
-          ipsum quia.
-         </p>
-         <div class="tsreview tsdflex d-flex align-items-center justify-content-start">
-          <div class="tsrevstar">
-           <i class="ti-star txbdbcolor"></i><i class="ti-star txbdbcolor"></i><i class="ti-star txbdbcolor"></i><i class="ti-star txbdbcolor"></i><i class="ti-star txbdbcolor"></i>
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-      <!-- 4 single testimonial -->
-      <div class="col-md-12 txbdmb30">
-       <div class="tsitem alltesicl">
-        <div class="tsimg tsst4 tsdflex d-flex align-items-center justify-content-start">
-         <div class="tsimgin tsimg-mr25">
-          <img src="assets/images/Co_testi2.png" alt="image">
-         </div>
-         <h2 class="tstitle">Bess Palmena <span class="tesspanf d-block txbdbcolor">Membre</span> </h2>
-        </div>
-        <div class="tscon">
-         <p>I was very impresed the service ipsum
-          is simply free text used by copy ping ex
-          refreshing. Neque porro est is dolorem
-          ipsum quia.
-         </p>
-         <div class="tsreview tsdflex d-flex align-items-center justify-content-start">
-          <div class="tsrevstar">
-           <i class="ti-star txbdbcolor"></i><i class="ti-star txbdbcolor"></i><i class="ti-star txbdbcolor"></i><i class="ti-star txbdbcolor"></i><i class="ti-star txbdbcolor"></i>
-          </div>
-         </div>
+       <div class="txbdcon">
+        <h2 class="txbdsvtitle hlight">Entraide</h2>
+        <div class="txbdsvbtn txbdbtnicon">
+         <a class="btnallt btnall btnallactive" href="faire-un-don.php">Faire un don</a>
         </div>
        </div>
       </div>
@@ -218,7 +280,6 @@
    </div>
   </div>
  </div>
- <!-- testimonial area -->
 
  <!-- footer area -->
  <?php
