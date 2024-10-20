@@ -34,46 +34,7 @@
         </div>
       </div>
     </div>
-    <!--
-    <div class="charido_header_top_two top_cr_style4 top_crt_style">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-4 col-lg-4 col-sm-12 col-md-6 tx_top_together">
-            <div class="top_crmenu_icon">
-              <ul class="top_crmenu_i_list text-left">
-                <li><a href="#"><i class="ti-facebook"></i></a></li>
-                <li><a href="#"><i class="ti-twitter"></i></a></li>
-                <li><a href="#"><i class="ti-instagram"></i></a></li>
-              </ul>
-            </div>
-            <div class="top_crl_menu margin_l30">
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-3 col-sm-12 d_md_none d_lg_none col-md-6">
-            <div class="theme_cr_logo text-center">
-              <div class="logo">
-                <a class="main_sticky_main_l" href="index.php" title="Cité d'Ex">
-                  <img src="assets/images/Logo_simple_cite_dex.png" style="max-width: 55%;" alt="Cité d'Ex">
-                </a>
-                <a class="main_sticky_l" href="index.php" title="Cité d'Ex">
-                  <img src="assets/images/Logo_simple_cite_dex.png" style="max-width: 55%;" alt="Cité d'Ex">
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-5 col-lg-5 col-sm-12  col-md-7">
-            <div class="top-address cr_top_addess">
-              <p class="text-right">
-                <a href="mailto:Citedex.asso@gmail.com" title="Nous contactez">
-                  <i class="ti-email"></i>
-                  Citedex.asso@gmail.com</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    !-->
+    
     <div class="charido-main-menu one_page hidden-xs hidden-sm witr_h_h22">
       <div class="charido_nav_area scroll_fixed">
         <div class="container">

@@ -5685,6 +5685,7 @@ p.form-messege {
 .pictoGrammeBox {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .pictoCard {

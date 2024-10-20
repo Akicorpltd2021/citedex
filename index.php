@@ -78,17 +78,6 @@
             <div class="witr_play_vi witr_all_color_v">
               <div class="witr_videobg_image boxtextposire">
                 <img src="assets/images/about.png" alt="image">
-                <!--
-                <div class="boxtextposi zindex999 boxposiltrb">
-                  <div class="boxtextposineer">
-                    <div class="play-overlay>">
-                      <a class="btnallt btnall btnallactive videowh text-center video-popup video-vemo-icon venobox vbox-item" data-vbtype="video" data-autoplay="true" href="https://youtu.be/BS4TUd7FJSg">
-                        <i class="flaticon flaticon-play-button-2"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
--->
               </div>
             </div>
           </div>
